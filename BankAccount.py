@@ -30,12 +30,14 @@ class BankAccount:
         print(
             self.full_name,
             "Account No.: " + self.account_number,
-            "Balance: " + self.balance
+            "Balance: " + str(self.balance)
         )
 
 #Last left off on instruction number 4      
 
 
-Account_1 = BankAccount("Mitchell", 03131592 , 400000)
-Account_2 = BankAccount("Michael Westen", 20072013, 5000000 )
-Account_3 = BankAccount("John Doe", 12345678, 20)
+Account_1 = BankAccount("Mitchell", "03131592" , 400000)
+Account_2 = BankAccount("Michael Westen", "20072013", 5000000 )
+Account_3 = BankAccount("John Doe", "12345678", 20)
+
+Account_1.print_statement()
